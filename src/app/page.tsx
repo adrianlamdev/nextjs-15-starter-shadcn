@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex items-center gap-4 font-bold">
+        <div className="flex items-center gap-6 font-bold">
           <Image
             className="dark:invert"
             src="/next.svg"
@@ -14,7 +14,38 @@ export default function Home() {
             priority
           />
           <span className="text-3xl">+</span>{" "}
-          <span className="text-2xl">shadcn/ui</span>
+          <span className="text-2xl flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256"
+              className="h-8 w-8"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="208"
+                y1="128"
+                x2="128"
+                y2="208"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              ></line>
+              <line
+                x1="192"
+                y1="40"
+                x2="40"
+                y2="192"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              ></line>
+            </svg>
+            shadcn/ui
+          </span>
         </div>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
@@ -48,14 +79,18 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Read Next.js docs
           </a>
         </div>
         <div>
-          <span className="font-bold">What&apos;s included?</span>
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left">
-            <li className="mb-2">Typescript</li>
-            <li>Save and see your changes instantly.</li>
+          <span className="font-bold text-lg">What&apos;s included?</span>
+          <ol className="list-disc list-inside text-sm text-center sm:text-left space-y-2 mt-2">
+            <li>Next.js 15 with Turbopack</li>
+            <li>TypeScript & Biome for type safety and linting</li>
+            <li>Tailwind CSS & shadcn/ui components</li>
+            <li>Dark mode with next-themes</li>
+            <li>Geist font family (Sans & Mono)</li>
+            <li>Radix UI primitives</li>
           </ol>
         </div>
       </main>
